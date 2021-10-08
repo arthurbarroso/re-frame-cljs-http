@@ -1,0 +1,18 @@
+{:nrepl {:port 8777}
+
+ :dev-http
+ {8280 "resources/public"}
+
+ :builds
+ {:dev {:target     :browser
+        :output-dir "resources/public/js"
+        :asset-path "/js"
+        :jvm-opts ["-Xmx4G"]
+        :modules
+        {:dev {:entries [re-frame-cljs-http.http-fx]}}}
+
+  :karma-test
+   {:target           :karma
+    :output-to        "target/karma.js"}}
+
+ :lein {:profile "cljs"}}

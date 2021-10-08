@@ -1,0 +1,10 @@
+.lsp
+.shadow-cljs
+resources/
+target/
+.lein-repl-history
+node_modules/
+yarn.lock
+.nrepl-port
+pom.xml
+pom.xml.asc
